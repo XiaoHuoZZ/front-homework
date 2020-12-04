@@ -4,7 +4,7 @@
 
       <!-- 头像 -->
       <div class="avatar_box">
-        <img src="../assets/logo.png" alt="" />
+        <img src="../assets/logo1.png" alt="" />
       </div>
 
       <!-- 登陆表单 -->

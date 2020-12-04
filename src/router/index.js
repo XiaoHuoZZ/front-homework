@@ -1,21 +1,24 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Login from '../component/Login.vue'
-
-
+const Login =() => import('../component/Login.vue')
+const Student = () => import('../component/Student')
 Vue.use(VueRouter)
 
 const routes = [{
   path: '/',
-  redirect: '/login'
+  redirect: '/student'
 }, {
   path: '/login',
   component: Login
-}]
+},{
+  path:'/student',
+  component:Student
+}
+]
 
 const router = new VueRouter({
-  mode: 'hash',
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
