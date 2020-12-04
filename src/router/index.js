@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-const Login =() => import('../component/Login.vue')
-const Student = () => import('../component/Student')
+const Login =() => import('../views/Login')
+const Student = () => import('../views/Student')
 Vue.use(VueRouter)
 
 const routes = [{
