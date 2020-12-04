@@ -3,7 +3,7 @@
         <el-container direction='vertical' class="container">
             <hd></hd>
             <el-container>
-                <as></as>
+                <as ref="af"></as>
                <mn></mn>
             </el-container>
         </el-container>
@@ -21,6 +21,10 @@
             'hd': header,
             'as':aside,
             'mn':main
+        },
+        created() {
+          // console.log(aside.data())
+          console.log( this.$refs.af.title)
         }
 
     }

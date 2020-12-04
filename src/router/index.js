@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 const Login =() => import('../views/Login')
 const Student = () => import('../views/Student')
+
 Vue.use(VueRouter)
 
 const routes = [{
