@@ -3,7 +3,7 @@
 
         <el-menu default-active="2" class="el-menu-vertical">
             <el-menu-item-group>
-                <div>{{ title }}</div>
+                <div class="functionName">{{ title }}</div>
                 <el-menu-item :index=item.text v-for="item in menuList" :key="item.text">{{item.text}}</el-menu-item>
             </el-menu-item-group>
         </el-menu>
@@ -32,5 +32,8 @@
 
 
 <style lang="less" scoped>
+.functionName {
+  font-weight: bold;
+}
 
 </style>

@@ -1,14 +1,14 @@
 <template>
-    
-        <el-container direction='vertical' class="container">
-            <hd></hd>
-            <el-container>
-                <as ref="af"></as>
-               <mn></mn>
-            </el-container>
-        </el-container>
 
-    
+    <el-container direction='vertical' class="container">
+        <hd></hd>
+        <el-container>
+            <as ref="mAside"></as>
+            <mn></mn>
+        </el-container>
+    </el-container>
+
+
 </template>
 
 <script>
@@ -19,12 +19,25 @@
         //注册组件
         components: {
             'hd': header,
-            'as':aside,
-            'mn':main
+            'as': aside,
+            'mn': main
         },
-        created() {
-          // console.log(aside.data())
-          console.log( this.$refs.af.title)
+        mounted() {
+            this.init()
+        },
+        methods: {
+            init() {
+                //改变aside组件里的值
+
+                this.$refs.mAside.title = "学生功能"
+                this.$refs.mAside.menuList = [{
+                        text: '我的',
+                    },
+                    {
+                        text: '实习列表'
+                    }
+                ]
+            }
         }
 
     }
@@ -32,8 +45,7 @@
 
 
 <style lang="less" scoped>
-
-.container {
-    height: 100%;
-}
+    .container {
+        height: 100%;
+    }
 </style>
