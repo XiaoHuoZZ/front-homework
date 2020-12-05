@@ -4,7 +4,8 @@
         <hd></hd>
         <el-container>
             <as ref="mAside"  @emit-select="handle_select" :menuList="items" :title="title"></as>
-            <el-main>Main</el-main>
+            <!-- 路由占位符，用来显示侧边栏右边区域 -->
+            <router-view></router-view>
         </el-container>
     </el-container>
 
