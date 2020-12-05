@@ -30,7 +30,14 @@
         methods: {
             //处理点击事件
             handle_select(index) {
-                console.log(index)
+                if(index=='实习列表')
+                {
+                    //点击实习列表跳转路由
+                    this.$router.push('/internships')
+                }else if(index=='我的')
+                {
+
+                }
             }
         }
 

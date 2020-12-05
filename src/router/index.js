@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 const Login =() => import('../views/Login')
 const Student = () => import('../views/Student')
-
+const Internships = () => import('../components/studendt/Internships')
 Vue.use(VueRouter)
 
 const routes = [{
@@ -14,7 +14,13 @@ const routes = [{
   component: Login
 },{
   path:'/student',
-  component:Student
+  component:Student,
+  children:[
+    {
+      path:'/internships',
+      component: Internships
+    }
+  ]
 }
 ]
 
