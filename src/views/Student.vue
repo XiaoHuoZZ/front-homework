@@ -4,7 +4,7 @@
         <hd></hd>
         <el-container>
             <as ref="mAside"></as>
-            <mn></mn>
+            <el-main>Main</el-main>
         </el-container>
     </el-container>
 
@@ -12,15 +12,13 @@
 </template>
 
 <script>
-    import header from '../components/Header'
-    import aside from '../components/Aside'
-    import main from '../components/Main'
+    import header from '../components/common/Header'
+    import aside from '../components/common/Aside'
     export default {
         //注册组件
         components: {
             'hd': header,
             'as': aside,
-            'mn': main
         },
         mounted() {
             this.init()
