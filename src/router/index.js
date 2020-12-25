@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 const Login =() => import('../views/Login')
 const Student = () => import('../views/Student')
-const Internships = () => import('../components/studendt/Internships')
+const Internships = () => import('../components/studendt/internships')
 Vue.use(VueRouter)
 
 const routes = [{
